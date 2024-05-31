@@ -18,7 +18,7 @@ const _home: React.FC = () => {
                   <div className=' justify-center gap-6  items-center flex flex-col  '>
                       <img className='opacity-25' src="code.png" alt="" />
                       <img className='opacity-50' src="code.png" alt="" />
-                      <img className='opacity-100' src="code.png" alt="" />
+                      <img className='opacity-85' src="code.png" alt="" />
                       <img className='opacity-50' src="code.png" alt="" />
                       <img className='opacity-25' src="code.png" alt="" />
                   </div>
