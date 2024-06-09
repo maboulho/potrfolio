@@ -28,6 +28,7 @@ const Projects: React.FC = () => {
   };
 
   return (
+    <div className="flex w-full h-full">
     <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] w-[19.25rem] h-full">
       <Folder
         name="Projects"
@@ -78,6 +79,31 @@ const Projects: React.FC = () => {
             } }          />
         </div>
       </Folder>
+    </div>
+    <div className=" h-full w-full grid grid-cols-3  items-start justify-center gap-80 p-64">
+            <div className="w-[40rem]  h-96 flex flex-col rounded-2xl border border-[#607B96]"> 
+               <img src="code.png" alt="" />
+               <div className="justify-start gap-6 text-xl bg-[#011221] text-[#607B96] p-4 w-fit h-[90%] flex flex-col ">
+                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
+                <button className="bg-[#1C2B3A] w-44 rounded-lg text-white h-10">view-project</button>
+                </div>  
+            </div>
+            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
+
+            </div>
+            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
+
+            </div>
+            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
+
+            </div>
+            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
+
+            </div>
+            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
+
+            </div>
+    </div>
     </div>
   );
 };
