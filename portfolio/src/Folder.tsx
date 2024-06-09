@@ -15,7 +15,7 @@ const Folder: React.FC<FolderProps> = ({ name, isActive, onClick, children, icon
 
   const toggleFolder = () => {
     setIsOpen(!isOpen);
-    onClick(); // Notify parent component of the click event
+    onClick(); 
   };
 
   return (
