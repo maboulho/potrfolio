@@ -44,6 +44,7 @@ const AboutMe: React.FC = () => {
                 name="Interest"
                 isActive={activeItem === 'Interest'}
                 onClick={() => handleItemClick('Interest')}
+                icon="folderItem.png"
               />
             </Folder>
             <Folder
@@ -59,6 +60,7 @@ const AboutMe: React.FC = () => {
                 name="I"
                 isActive={activeItem === 'I'}
                 onClick={() => handleItemClick('I')}
+                icon="folderItem.png"
               />
             </Folder>
             <Folder
@@ -74,6 +76,7 @@ const AboutMe: React.FC = () => {
                 name=" 1337 Coding School UM6P"
                 isActive={activeItem === '1337'}
                 onClick={() => handleItemClick('1337')}
+                icon="folderItem.png"
               />
             </Folder>
           </Folder>
@@ -109,7 +112,7 @@ const AboutMe: React.FC = () => {
         </div>
         <div className="w-[2rem]  border-r border-l"></div>
         <div className="w-[103rem] flex p-16 ml-5 items-center justify-center">
-          <img src="carbon.png" alt="" />
+          <img src="me.webp" alt="" />
         </div>
       </div>
       </div>

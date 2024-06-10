@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
             <div className="h-48 flex flex-col">
-                  <img src="code.png"  alt=""  className=" p-1  w-[41rem] h-[12.3rem]  "/>
+                  <img src="PingPong.jpg"  alt=""  className=" p-1 rounded-2xl  w-[41rem] h-[12.3rem]  "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
@@ -103,7 +103,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
             <div className="h-48 flex flex-col">
-                  <img src="nginx.webp"  alt=""  className=" p-1  w-[41rem] h-[12.3rem]  "/>
+                  <img src="nginx.webp"  alt=""  className="  rounded-2xl w-[41rem] h-[12rem]  "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
@@ -118,7 +118,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
             <div className="h-48 flex flex-col">
-                  <img src="cub3d.png"  alt=""  className=" p-1  w-[41rem] h-[12.3rem]  "/>
+                  <img src="cub3d.png"  alt=""  className=" p-1  w-[41rem] rounded-2xl h-[12.3rem]  "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>

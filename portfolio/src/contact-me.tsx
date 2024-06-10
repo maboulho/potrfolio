@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={name === "" ? "Please enter your name" : ""}
-                  className="w-[29rem] h-12 rounded-md bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] outline-none"
+                  className="w-[29rem] h-12 rounded-md bg-[#011221] p-3 border-[#1E2D3D] border focus:border-[#607B96] outline-none"
                   required
                 />
               </div>
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={email === "" ? "Please enter your email" : ""}
-                  className="w-[29rem] h-12 rounded-md bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] outline-none"
+                  className="w-[29rem] h-12 rounded-md p-3 bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] outline-none"
                   required
                 />
               </div>
@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder={message === "" ? "Please write something" : ""}
-                  className="w-[29rem] h-[13rem] rounded-md bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] resize-none outline-none"
+                  className="w-[29rem] h-[13rem] p-3 rounded-md bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] resize-none outline-none"
                   required
                 />
               </div>
