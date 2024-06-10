@@ -1,5 +1,7 @@
 
 import { FaGithub } from 'react-icons/fa6';
+import { FaTwitter } from "react-icons/fa";
+
 import './App.css'
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from 'react';
@@ -64,7 +66,8 @@ function App() {
                   <FaLinkedin className='ml-5 h-10' />
                   </div>
                   <div className='flex divide-x-[1px] h-12 divide-[#607B96] items-center '>
-                  <FaGithub className='ml-5 h-16' />
+                  <FaTwitter className='ml-5 h-16' />
+
                   </div>
                   <div className='flex divide-x-[1px] h-12 divide-[#607B96] border-[#607B96] items-center'></div>
                 </div>

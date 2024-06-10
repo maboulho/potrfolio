@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="flex w-full h-full">
-    <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] w-[21.50rem] h-full">
+    <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] w-[21.20rem] h-full">
       <Folder
         name="Projects"
         isActive={activeFolder === 'Personal info'}
@@ -80,11 +80,11 @@ const Projects: React.FC = () => {
         </div>
       </Folder>
     </div>
-    <div className=" h-full w-full grid grid-cols-3  items-start justify-center gap-80 p-64">
-          <div className=" gap-4 flex flex-col">
+    <div className=" h-full w-full grid grid-cols-3 p-36  items-center   justify-center ">
+          <div className=" gap-4 flex flex-col ">
             <div className="ml-8 flex gap-3 text-xl">
               <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// Webserv</p>
+              <p className="text-[#607B96]">// multiplayer online game</p>
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
             <div className="h-48 flex flex-col">
@@ -99,11 +99,11 @@ const Projects: React.FC = () => {
           <div className=" gap-4 flex flex-col">
             <div className="ml-8 flex gap-3 text-xl">
               <p className="text-[#5565E8] "> Project 2</p>
-              <p className="text-[#607B96]">// Webserv</p>
+              <p className="text-[#607B96]">// HTTP Web Server</p>
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
             <div className="h-48 flex flex-col">
-                  <img src="code.png"  alt=""  className=" p-1  w-[41rem] h-[12.3rem]  "/>
+                  <img src="nginx.webp"  alt=""  className=" p-1  w-[41rem] h-[12.3rem]  "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
@@ -114,11 +114,11 @@ const Projects: React.FC = () => {
           <div className=" gap-4 flex flex-col">
             <div className="ml-8 flex gap-3 text-xl">
               <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// Webserv</p>
+              <p className="text-[#607B96]">// Cub3d (RayCasting)</p>
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
             <div className="h-48 flex flex-col">
-                  <img src="code.png"  alt=""  className=" p-1  w-[41rem] h-[12.3rem]  "/>
+                  <img src="cub3d.png"  alt=""  className=" p-1  w-[41rem] h-[12.3rem]  "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>

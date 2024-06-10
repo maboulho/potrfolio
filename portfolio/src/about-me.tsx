@@ -9,13 +9,13 @@ const AboutMe: React.FC = () => {
   
     const handleFolderClick = (folderName: string) => {
       setActiveFolder(folderName);
-      setActiveSubFolder(null); // Reset active subfolder when a main folder is clicked
-      setActiveItem(null); // Reset active item when a folder is clicked
+      setActiveSubFolder(null);
+      setActiveItem(null);
     };
   
     const handleSubFolderClick = (subFolderName: string) => {
       setActiveSubFolder(subFolderName);
-      setActiveItem(null); // Reset active item when a subfolder is clicked
+      setActiveItem(null);
     };
   
     const handleItemClick = (itemName: string) => {
@@ -23,6 +23,7 @@ const AboutMe: React.FC = () => {
     };
   
     return (
+      <div className="flex  h-full w-full">
       <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] w-[19.25rem] h-full">
         <div className="w-[19.25rem]">
           <Folder
@@ -65,14 +66,14 @@ const AboutMe: React.FC = () => {
               isActive={activeSubFolder === 'Education'}
               onClick={() => handleSubFolderClick('Education')}
               icon2="list1.png"
-              icon="folderO.png"
+              icon="folderB.png"
               icon2Open="list2.png"
 
             >
               <FolderItem
-                name="InteR"
-                isActive={activeItem === 'InteR'}
-                onClick={() => handleItemClick('InteR')}
+                name=" 1337 Coding School UM6P"
+                isActive={activeItem === '1337'}
+                onClick={() => handleItemClick('1337')}
               />
             </Folder>
           </Folder>
@@ -98,6 +99,19 @@ const AboutMe: React.FC = () => {
             />
           </Folder>
         </div>
+      </div>
+      <div className="h-full w-full flex divide-x  divide-[#607B96]">
+        <div className="w-[90rem] flex items-center justify-center p-72 text-[#607B96]">
+            <div className="gap-8  flex">
+              <span className=" mr-3">1</span>
+              <span className=""> * I have 5 years of еxperience in web</span>
+            </div>
+        </div>
+        <div className="w-[2rem]  border-r border-l"></div>
+        <div className="w-[103rem] flex p-16 ml-5 items-center justify-center">
+          <img src="carbon.png" alt="" />
+        </div>
+      </div>
       </div>
     );
   };
