@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Folder from "./Folder";
 import FolderItem from "./FolderItem";
+import PersonalInfo from "./personal-info";
+import Education from "./education";
+import Skills from "./skills";
 
 const AboutMe: React.FC = () => {
     const [activeFolder, setActiveFolder] = useState<string | null>(null);
@@ -41,25 +44,25 @@ const AboutMe: React.FC = () => {
               icon2Open="list2.png"
             >
               <FolderItem
-                name="Interest"
-                isActive={activeItem === 'Interest'}
-                onClick={() => handleItemClick('Interest')}
+                name="Personal-info"
+                isActive={activeItem === 'Personal-info'}
+                onClick={() => handleItemClick('Personal-info')}
                 icon="folderItem.png"
               />
             </Folder>
             <Folder
-              name="Interest"
-              isActive={activeSubFolder === 'Interest'}
-              onClick={() => handleSubFolderClick('Interest')}
+              name="Technologies-languages"
+              isActive={activeSubFolder === 'Technologies-languages'}
+              onClick={() => handleSubFolderClick('Technologies-languages')}
               icon2="list1.png"
               icon="folderG.png"
               icon2Open="list2.png"
 
             >
               <FolderItem
-                name="I"
-                isActive={activeItem === 'I'}
-                onClick={() => handleItemClick('I')}
+                name="Skills"
+                isActive={activeItem === 'Skills'}
+                onClick={() => handleItemClick('Skills')}
                 icon="folderItem.png"
               />
             </Folder>
@@ -103,18 +106,15 @@ const AboutMe: React.FC = () => {
           </Folder>
         </div>
       </div>
-      <div className="h-full w-full flex divide-x  divide-[#607B96]">
-        <div className="w-[90rem] flex items-center justify-center p-72 text-[#607B96]">
-            <div className="gap-8  flex">
-              <span className=" mr-3">1</span>
-              <span className=""> * I have 5 years of еxperience in web</span>
-            </div>
-        </div>
-        <div className="w-[2rem]  border-r border-l"></div>
-        <div className="w-[103rem] flex p-16 ml-5 items-center justify-center">
-          <img src="me.webp" alt="" />
-        </div>
-      </div>
+      {activeItem === 'Personal-info' && (
+          <PersonalInfo/>
+      )}
+      {activeItem === '1337' && (
+        <Education/>
+      )}
+      {activeItem === 'Skills' && (
+        <Skills/>
+      )}
       </div>
     );
   };

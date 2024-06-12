@@ -80,15 +80,15 @@ const Projects: React.FC = () => {
         </div>
       </Folder>
     </div>
-    <div className=" h-full w-full grid grid-cols-3 p-36  items-center   justify-center ">
+    <div className=" h-full w-full grid grid-cols-3  lg:ml-36 lg:p-36  items-start justify-center ">
           <div className=" gap-4 flex flex-col ">
             <div className="ml-8 flex gap-3 text-xl">
               <p className="text-[#5565E8]"> Project 1</p>
               <p className="text-[#607B96]">// multiplayer online game</p>
             </div>
-            <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="h-48 flex flex-col">
-                  <img src="PingPong.jpg"  alt=""  className=" p-1 rounded-2xl  w-[41rem] h-[12.3rem]  "/>
+            <div className=" lg:w-[40rem] sm:w-96 sm:h-64 lg:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
+            <div className="h-1/2 flex w-full pt-1">
+                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
@@ -102,8 +102,8 @@ const Projects: React.FC = () => {
               <p className="text-[#607B96]">// HTTP Web Server</p>
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="h-48 flex flex-col">
-                  <img src="nginx.webp"  alt=""  className="  rounded-2xl w-[41rem] h-[12rem]  "/>
+            <div className="h-1/2 flex w-full pt-1">
+                  <img src="nginx.webp"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full  "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
@@ -117,8 +117,8 @@ const Projects: React.FC = () => {
               <p className="text-[#607B96]">// Cub3d (RayCasting)</p>
             </div>
             <div className="w-[40rem]  h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="h-48 flex flex-col">
-                  <img src="cub3d.png"  alt=""  className=" p-1  w-[41rem] rounded-2xl h-[12.3rem]  "/>
+            <div className="h-1/2 flex w-full pt-1`">
+                  <img src="cub3d.png"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
               </div>
                <div className="justify-start gap-6 text-2xl  text-[#607B96] p-8 w-fit  flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
@@ -126,15 +126,7 @@ const Projects: React.FC = () => {
                 </div>  
           </div>   
           </div>
-            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
-
-            </div>
-            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
-
-            </div>
-            <div className="w-[40rem] h-96 rounded-2xl border border-[#607B96]"> 
-
-            </div>
+            
     </div>
     </div>
   );
