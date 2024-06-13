@@ -5,8 +5,8 @@ const _home: React.FC = () => {
         <>
             <div className='flex flex-col justify-center gap-6    items-start'>
                       <p className=' text-white '>Hi all, I am</p>
-                      <p className=' text-7xl text-white'>Mohamed Aboulhoda</p>
-                      <p className='text-[#4D5BCE] text-4xl'> {'>'} Front-end Developer</p>
+                      <p className=' md:text-4xl lg:text-7xl text-white'>Mohamed Aboulhoda</p>
+                      <p className='text-[#4D5BCE] md:text-2xl lg:text-4xl'> {'>'} Front-end Developer</p>
                       <p className='text-[#607B96]'>// you can also see it on my Github page</p>
                       <div className='flex gap-4'>
                         <p className='text-[#4D5BCE]'>const </p>
