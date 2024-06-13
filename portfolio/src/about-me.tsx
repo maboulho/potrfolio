@@ -27,8 +27,8 @@ const AboutMe: React.FC = () => {
   
     return (
       <div className="flex  h-full w-full">
-      <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] w-[19.25rem] h-full">
-        <div className="w-[19.25rem]">
+      <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] lg:w-[10rem]  2xl:w-[19.25rem] h-full">
+        <div className="2xl:w-[19.25rem] lg:w-[10rem]">
           <Folder
             name="Personal info"
             isActive={activeFolder === 'Personal info'}
@@ -84,7 +84,7 @@ const AboutMe: React.FC = () => {
             </Folder>
           </Folder>
         </div>
-        <div className="w-[19.25rem]">
+        <div className="2xl:w-[19.25rem] lg:w-[10rem]">
           <Folder
             name="Contact me"
             isActive={activeFolder === 'Contact me'}

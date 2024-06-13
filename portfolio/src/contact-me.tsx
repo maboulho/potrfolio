@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] w-[19.25rem] h-full">
+      <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] lg:w-[10rem] 2xl:w-[19.25rem] h-full">
         <div className="w-[19.25rem]">
           <Folder
             name="Contact me"
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
       <div className="w-full flex">
         <div className="h-full w-[46%] border-r border-[#607B96]">
           {!formSubmitted ? (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-16 p-96 justify-start items-start h-full w-[100%] text-[#607B96]">
+            <form onSubmit={handleSubmit} className="flex  flex-col 2xl:gap-16 2xl:p-96 lg:text-xs lg:gap-4  2xl:text-xl justify-center items-start h-full w-full text-[#607B96]">
               <div className="flex flex-col gap-4">
                 <label htmlFor="from_name">_name:</label>
                 <input
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={name === "" ? "Please enter your name" : ""}
-                  className="w-[29rem] h-12 rounded-md bg-[#011221] p-3 border-[#1E2D3D] border focus:border-[#607B96] outline-none"
+                  className="2xl:w-[29rem] 2xl:h-12 lg:w-[13rem] rounded-md lg:placeholder:text-xs 2xl:placeholder:text-base bg-[#011221] p-3 border-[#1E2D3D] border focus:border-[#607B96] outline-none"
                   required
                 />
               </div>
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={email === "" ? "Please enter your email" : ""}
-                  className="w-[29rem] h-12 rounded-md p-3 bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] outline-none"
+                  className="2xl:w-[29rem] 2xl:h-12 rounded-md lg:w-[13rem] lg:placeholder:text-xs 2xl:placeholder:text-base p-3 bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] outline-none"
                   required
                 />
               </div>
@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder={message === "" ? "Please write something" : ""}
-                  className="w-[29rem] h-[13rem] p-3 rounded-md bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] resize-none outline-none"
+                  className="2xl:w-[29rem] 2xl:h-[13rem] lg:h-[6rem] p-3 lg:w-[17rem] rounded-md lg:placeholder:text-xs 2xl:placeholder:text-base bg-[#011221] border-[#1E2D3D] border focus:border-[#607B96] resize-none outline-none"
                   required
                 />
               </div>
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
               </button>
             </form>
           ) : (
-            <div className="flex flex-col gap-7 mb-48 pb-48 justify-center items-center h-full w-[100%] text-[#607B96]">
+            <div className="flex flex-col gap-7 2xl:mb-48 2xl:pb-48 justify-center items-center h-full w-[100%] text-[#607B96]">
               <p className="text-3xl text-white">Thank You! &#129304;</p>
               <p className="text-2xl">Your message has been accepted. You</p>
               <p className="text-2xl"> will receive an answer really soon!</p>
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
             </div>
           )}
         </div>
-        <div className="flex justify-center text-2xl pb-44 items-center h-full w-[50%]">
+        <div className="flex justify-center lg:text-xs 2xl:text-2xl 2xl:pb-44 items-center h-full w-[50%]">
           <div className="text-left gap-3 flex flex-col">
             <div className="gap-8 flex">
               <span className="text-[#607B96] mr-3">1</span>

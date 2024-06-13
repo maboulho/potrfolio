@@ -44,13 +44,13 @@ function App() {
                     <p className='mr-9 ml-5'>_contact-me</p>  
                   </div>
               </div>
-              <div  className={activeTab === 1 ?'flex  font-Fira_code h-[90%] gap-16  justify-center ' : 'hidden'}>
+              <div  className={activeTab === 1 ?'flex  font-Fira_code h-[71%] gap-16  justify-center w-full  ' : 'hidden'}>
                   <_home />
               </div>
               <div  className={activeTab === 2 ?'flex  font-Fira_code h-[100%] gap-16  ' : 'hidden'}>
                   <AboutMe />
               </div>
-              <div  className={activeTab === 3 ?'flex  font-Fira_code h-[100%] gap-16 ' : 'hidden'}>
+              <div  className={activeTab === 3 ?'flex  font-Fira_code h-[100%] gap-16  relative ' : 'hidden'}>
                   <Projects />
               </div>
               <div  className={activeTab === 4 ?'flex  font-Fira_code h-[100%] gap-16  ' : 'hidden'}>
