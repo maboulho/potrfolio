@@ -1,6 +1,11 @@
 import { useState } from "react";
 import Folder from "./Folder";
 import FolderItem from "./FolderItem";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
 
 const Projects: React.FC = () => {
   const [activeFolder, setActiveFolder] = useState<string | null>(null);
@@ -28,8 +33,8 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="flex w-full h-full">
-    <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] lg:w-[10rem]  2xl:w-[19.25rem] h-full">
+    <div className="flex   w-full h-full">
+    <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] w-[19rem]   h-full">
       <Folder
         name="Projects"
         isActive={activeFolder === 'Personal info'}
@@ -80,113 +85,52 @@ const Projects: React.FC = () => {
         </div>
       </Folder>
     </div>
-    <div className=" h-full w-full grid 2xl:grid-cols-3 lg:grid-cols-2 2xl:ml-48 2xl:p-48 lg:ml-10 lg:p-20 lg:pl-44  gap-y-12 gap-x-8 items-center overflow-y-auto justify-center absolute no-scrollbar ">
+    {/* <div className=" flex h-full w-[100%] debug   items-center overflow-y-auto justify-center  no-scrollbar ">
           <div className=" gap-5 flex flex-col  ">
-            <div className="ml-8 flex gap-3 lg:text-md 2xl:text-xl">
+            <div className=" flex gap-3 lg:text-sm ">
               <p className="text-[#5565E8]"> Project 1</p>
               <p className="text-[#607B96]">// multiplayer online game</p>
             </div> 
-            <div className=" 2xl:w-[40rem] lg:w-[25rem] lg:h-[15rem]  2xl:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="2xl:h-1/2 lg:h-1/2 lg:w-full flex 2xl:w-full pt-1">
-                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
+            <div className="  flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
+            <div className=" ">
+                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl  "/>
               </div>
-               <div className="justify-start 2xl:gap-6 lg:gap-3 2xl:text-2xl lg:text-xs lg:h-[10rem] 2xl:h-1/2 text-[#607B96] p-8 w-fit  flex flex-col ">
+               <div className="justify-start  text-[#607B96]   flex flex-col ">
                 <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A] 2xl:w-44 lg:w-40  text-xl rounded-lg text-white lg:h-11 2xl:h-[11rem ">view-project</button>
+                <button className="bg-[#1C2B3A]  text-xl rounded-lg text-white ">view-project</button>
                 </div>  
           </div>   
           </div>
-          <div className=" gap-4 flex flex-col">
-            <div className="ml-8 flex gap-3 lg:text-md 2xl:text-xl">
-              <p className="text-[#5565E8] "> Project 2</p>
-              <p className="text-[#607B96]">// HTTP Web Server</p>
-            </div>
-            <div className=" 2xl:w-[40rem] lg:w-[25rem] lg:h-[15rem]  2xl:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="2xl:h-1/2 lg:h-1/2 lg:w-full flex 2xl:w-full pt-1">
-                  <img src="nginx.webp"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full  "/>
-              </div>
-               <div className="justify-start 2xl:gap-6 lg:gap-3 2xl:text-2xl lg:text-xs lg:h-[8rem] 2xl:h-1/2 text-[#607B96] p-8 w-fit  flex flex-col">
-                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A] 2xl:w-44 lg:w-40 lg:mb-12 text-xl rounded-lg text-white lg:h-11 2xl:h-16">view-project</button>
-                </div>  
-          </div>   
-          </div>
-          <div className=" gap-4 flex flex-col">
-            <div className="ml-8 flex gap-3 lg:text-md 2xl:text-xl">
-              <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// Cub3d (RayCasting)</p>
-            </div>
-            <div className="2xl:w-[40rem] lg:w-[25rem] lg:h-[15rem]  2xl:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="2xl:h-1/2 lg:h-1/2 lg:w-full flex 2xl:w-full pt-1">
-                  <img src="cub3d.png"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
-              </div>
-               <div className="justify-start 2xl:gap-6 lg:gap-3 2xl:text-2xl lg:text-xs lg:h-[8rem] 2xl:h-1/2 text-[#607B96] p-8 w-fit  flex flex-col">
-                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A] 2xl:w-44 lg:w-40 lg:mb-12 text-xl rounded-lg text-white lg:h-11 2xl:h-16">view-project</button>
-                </div>  
-          </div>   
-          </div>
-          <div className=" gap-5 flex flex-col  ">
-            <div className="ml-8 flex gap-3 lg:text-md 2xl:text-xl">
-              <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// multiplayer online game</p>
-            </div> 
-            <div className=" 2xl:w-[40rem] lg:w-[25rem] lg:h-[15rem]  2xl:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="2xl:h-1/2 lg:h-1/2 lg:w-full flex 2xl:w-full pt-1">
-                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
-              </div>
-               <div className="justify-start 2xl:gap-6 lg:gap-3 2xl:text-2xl lg:text-xs lg:h-[8rem] 2xl:h-1/2 text-[#607B96] p-8 w-fit  flex flex-col ">
-                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A] 2xl:w-44 lg:w-40 lg:mb-12 text-xl rounded-lg text-white lg:h-11 2xl:h-16">view-project</button>
-                </div>  
-          </div>   
-          </div>
-          <div className=" gap-5 flex flex-col  ">
-            <div className="ml-8 flex gap-3 lg:text-md 2xl:text-xl">
-              <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// multiplayer online game</p>
-            </div> 
-            <div className=" 2xl:w-[40rem] lg:w-[25rem] lg:h-[15rem]  2xl:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="2xl:h-1/2 lg:h-1/2 lg:w-full flex 2xl:w-full pt-1">
-                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
-              </div>
-               <div className="justify-start 2xl:gap-6 lg:gap-3 2xl:text-2xl lg:text-xs lg:h-[8rem] 2xl:h-1/2 text-[#607B96] p-8 w-fit  flex flex-col ">
-                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A] 2xl:w-44 lg:w-40 lg:mb-12 text-xl rounded-lg text-white lg:h-11 2xl:h-16">view-project</button>
-                </div>  
-          </div>   
-          </div>
-          <div className=" gap-5 flex flex-col  ">
-            <div className="ml-8 flex gap-3 lg:text-md 2xl:text-xl">
-              <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// multiplayer online game</p>
-            </div> 
-            <div className=" 2xl:w-[40rem] lg:w-[25rem] lg:h-[15rem]  2xl:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="2xl:h-1/2 lg:h-1/2 lg:w-full flex 2xl:w-full pt-1">
-                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
-              </div>
-               <div className="justify-start 2xl:gap-6 lg:gap-3 2xl:text-2xl lg:text-xs lg:h-[8rem] 2xl:h-1/2 text-[#607B96] p-8 w-fit  flex flex-col ">
-                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A] 2xl:w-44 lg:w-40 lg:mb-12 text-xl rounded-lg text-white lg:h-11 2xl:h-16">view-project</button>
-                </div>  
-          </div>   
-          </div>
-          <div className=" gap-5 flex flex-col  ">
-            <div className="ml-8 flex gap-3 lg:text-md 2xl:text-xl">
-              <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// multiplayer online game</p>
-            </div> 
-            <div className=" 2xl:w-[40rem] lg:w-[25rem] lg:h-[15rem]  2xl:h-96 flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className="2xl:h-1/2 lg:h-1/2 lg:w-full flex 2xl:w-full pt-1">
-                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl w-full h-full "/>
-              </div>
-               <div className="justify-start 2xl:gap-6 lg:gap-3 2xl:text-2xl lg:text-xs lg:h-[8rem] 2xl:h-1/2 text-[#607B96] p-8 w-fit  flex flex-col ">
-                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A] 2xl:w-44 lg:w-40 lg:mb-12 text-xl rounded-lg text-white lg:h-11 2xl:h-16">view-project</button>
-                </div>  
-          </div>   
-          </div>
+          
             
+    </div> */}
+    <div className="flex items-center overflow-y-auto justify-center  no-scrollbar w-full  ">
+
+    <Card sx={{ maxWidth: 345 ,maxHeight:500,background:"#011627"}}>
+      <CardActionArea>
+        <div className="flex gap-4 ">
+      <Typography gutterBottom variant="h6" component="div" textAlign={'justify'} className=" text-[#5565E8]">
+            Project 1
+      </Typography>
+      <Typography gutterBottom variant="h6" component="div" className=" text-[#607B96]">
+      // multiplayer online game
+      </Typography>
+        </div>
+        <CardMedia
+          component="img"
+          image="PingPong.jpg"
+          alt="green iguana"
+          className="h-32"
+        />
+        <CardContent>
+          <Typography variant="h6" color="#607B96">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+          </Typography>
+          <button className="text-white border-inherit rounded h-10 w-1/2 bg-[#607B96] ">view-project</button>
+
+        </CardContent>
+      </CardActionArea>
+    </Card>
     </div>
     </div>
   );

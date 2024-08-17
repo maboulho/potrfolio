@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
               <span className="">7 &nbsp; &nbsp; &nbsp; &nbsp;  * Extensive experience in creating seamless user experiences and robust backend systems</span>
               <span className="">8 &nbsp; &nbsp; &nbsp; &nbsp;   * Committed to meeting demanding development objectives and tight schedules</span>
               <span className="">9 &nbsp; &nbsp; &nbsp; &nbsp;   * Adept at driving projects from concept to completion with precision and excellence</span>
-              <span className="">10 &nbsp; &nbsp; &nbsp; &nbsp;   /**</span>
+              <span className="">10 &nbsp; &nbsp; &nbsp; &nbsp;   /**</span>lg:mr-5 lg:p-1 2xl:p-32  
           </div>
         </div>
         <div className="w-[2rem]  border-r border-l"></div>

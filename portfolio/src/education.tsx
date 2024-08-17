@@ -3,8 +3,8 @@ import React from 'react';
 const Education: React.FC = () => {
   return (
 <div className="h-full w-full flex divide-x  divide-[#607B96]">
-        <div className="2xl:w-[90rem] lg:w-full flex items-center flex-col justify-center lg:mr-5 lg:p-1 2xl:p-32  text-left text-[#607B96]">
-          <div className="text-left lg:text-xs   2xl:text-xl flex flex-col gap-5 ">
+        <div className="flex items-center flex-col justify-center w-[80%] text-left text-[#607B96]">
+          <div className="text-left text-sm flex flex-col gap-5 m-4 ">
               <span className="">1 &nbsp; &nbsp; &nbsp;    /**</span>
               <span className="">2 &nbsp; &nbsp; &nbsp;* 1337 Coding School at Ben Guerir is an innovative educational institution in Morocco</span>
               <span className="">3 &nbsp; &nbsp; &nbsp;* Part of the University Mohammed VI Polytechnic (UM6P)</span>
@@ -17,8 +17,8 @@ const Education: React.FC = () => {
               <span className="">10 &nbsp; &nbsp;  /**</span>
           </div>
         </div>
-        <div className="2xl:w-[2rem] lg:w-[1rem]  border-r border-l"></div>
-        <div className="2xl:w-[103rem] lg:w-[50%] flex 2xl:p-16  2xl:ml-5 items-center justify-center">
+        <div className="w-[1rem]  border-r border-l"></div>
+        <div className="w-[55%] flex  items-center justify-center">
           <img src="1337.jpg" alt="" className="2xl:w-[70%] lg:w-[95%]"/>
         </div>
       </div>

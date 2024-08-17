@@ -113,7 +113,8 @@ const AboutMe: React.FC = () => {
         <Education/>
       )}
       {activeItem === 'Skills' && (
-        <Skills/>
+        <Education/> 
+        // <Skills/>
       )}
       </div>
     );

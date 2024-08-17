@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
       <div className="w-full flex">
         <div className="h-full w-[46%] border-r border-[#607B96]">
           {!formSubmitted ? (
-            <form onSubmit={handleSubmit} className="flex  flex-col 2xl:gap-16 2xl:p-96 lg:text-xs lg:gap-4  2xl:text-xl justify-center items-start h-full w-full text-[#607B96]">
+            <form onSubmit={handleSubmit} className="flex  flex-col  justify-center items-start h-full w-full text-[#607B96]">
               <div className="flex flex-col gap-4">
                 <label htmlFor="from_name">_name:</label>
                 <input
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
             </div>
           )}
         </div>
-        <div className="flex justify-center lg:text-xs 2xl:text-2xl 2xl:pb-44 items-center h-full w-[50%]">
+        <div className="flex justify-center  items-center h-full w-[50%]">
           <div className="text-left gap-3 flex flex-col">
             <div className="gap-8 flex">
               <span className="text-[#607B96] mr-3">1</span>
