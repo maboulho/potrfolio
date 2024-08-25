@@ -24,11 +24,11 @@ const _home: React.FC = () => {
         </div>
         {/* For 2xl screens (5 images) */}
         <div className="hidden 2xl:flex 2xl:gap-6 2xl:flex-col 2xl:items-center">
-          <img className="opacity-25" src="code.png" alt="code" />
+          {/* <img className="opacity-25" src="code.png" alt="code" /> */}
           <img className="opacity-50" src="code.png" alt="code" />
           <img className="opacity-85" src="code.png" alt="code" />
           <img className="opacity-50" src="code.png" alt="code" />
-          <img className="opacity-25" src="code.png" alt="code" />
+          {/* <img className="opacity-25" src="code.png" alt="code" /> */}
         </div>
       </div>
     </>

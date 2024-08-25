@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] lg:w-[10rem] 2xl:w-[19.25rem] h-full">
+      <div className="border-r divide-y divide-[#607B96] text-xs flex flex-col border-[#607B96] lg:w-[10rem] 2xl:w-[13.25rem] h-full">
         <div className="w-[19.25rem]">
           <Folder
             name="Contact me"

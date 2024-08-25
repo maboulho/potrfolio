@@ -1,13 +1,18 @@
 import { useState } from "react";
 import Folder from "./Folder";
 import FolderItem from "./FolderItem";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import ProjectCard from "./Project_card";
 
 const Projects: React.FC = () => {
+  const projectData = [
+    { name: 'Project 1', image: 'PingPong.jpg', link: '#link1' },
+    { name: 'Project 2', image: 'PingPong.jpg', link: '#link2' },
+    { name: 'Project 3', image: 'PingPong.jpg', link: '#link3' },
+    { name: 'Project 4', image: 'PingPong.jpg', link: '#link4' },
+    { name: 'Project 5', image: 'PingPong.jpg', link: '#link5' },
+    { name: 'Project 6', image: 'PingPong.jpg', link: '#link6' },
+  { name: 'Project 7', image: 'PingPong.jpg', link: '#link7' },
+  ];
   const [activeFolder, setActiveFolder] = useState<string | null>(null);
   const [activeItem, setActiveItem] = useState<string | null>(null);
   const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({});
@@ -85,53 +90,13 @@ const Projects: React.FC = () => {
         </div>
       </Folder>
     </div>
-    {/* <div className=" flex h-full w-[100%] debug   items-center overflow-y-auto justify-center  no-scrollbar ">
-          <div className=" gap-5 flex flex-col  ">
-            <div className=" flex gap-3 lg:text-sm ">
-              <p className="text-[#5565E8]"> Project 1</p>
-              <p className="text-[#607B96]">// multiplayer online game</p>
-            </div> 
-            <div className="  flex flex-col  items-center justify-center divide-y-[1px] divide-[#607B96] bg-[#011221] rounded-2xl border border-[#607B96]">
-            <div className=" ">
-                  <img src="PingPong.jpg"  alt=""  className=" !object-cover rounded-t-2xl  "/>
-              </div>
-               <div className="justify-start  text-[#607B96]   flex flex-col ">
-                <p>lorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum</p>
-                <button className="bg-[#1C2B3A]  text-xl rounded-lg text-white ">view-project</button>
-                </div>  
-          </div>   
+      <div className=" flex  h-full p-4 w-full  items-start  justify-center overflow-y-auto no-scrollbar relative  ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10  absolute overflow-y-auto  ">
+            {projectData.map((project, index) => (
+                <ProjectCard key={index} name={project.name} image={project.image} link={project.link} />
+              ))}
           </div>
-          
-            
-    </div> */}
-    <div className="flex items-center overflow-y-auto justify-center  no-scrollbar w-full  ">
-
-    <Card sx={{ maxWidth: 345 ,maxHeight:500,background:"#011627"}}>
-      <CardActionArea>
-        <div className="flex gap-4 ">
-      <Typography gutterBottom variant="h6" component="div" textAlign={'justify'} className=" text-[#5565E8]">
-            Project 1
-      </Typography>
-      <Typography gutterBottom variant="h6" component="div" className=" text-[#607B96]">
-      // multiplayer online game
-      </Typography>
-        </div>
-        <CardMedia
-          component="img"
-          image="PingPong.jpg"
-          alt="green iguana"
-          className="h-32"
-        />
-        <CardContent>
-          <Typography variant="h6" color="#607B96">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-          </Typography>
-          <button className="text-white border-inherit rounded h-10 w-1/2 bg-[#607B96] ">view-project</button>
-
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </div>
+      </div>
     </div>
   );
 };
